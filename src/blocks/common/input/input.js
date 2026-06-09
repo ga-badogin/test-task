@@ -1,4 +1,5 @@
 import cls from './input.module.scss'
+import SearchIcon from '../../../assets/icons/search.svg'
 
 export function createInput({ placeholder, onChange }) {
   const inputContainer = document.createElement('div')
@@ -12,7 +13,7 @@ export function createInput({ placeholder, onChange }) {
   const icon = document.createElement('img')
   icon.className = cls.icon
 
-  icon.src = 'src/assets/icons/search.svg'
+  icon.src = String(SearchIcon)
   icon.alt = 'Search'
 
   inputContainer.append(input, icon)
