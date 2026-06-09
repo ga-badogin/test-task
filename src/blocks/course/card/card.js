@@ -1,5 +1,6 @@
 import cls from './card.module.scss'
 import { capitalize } from '../../../utils/utils.js'
+import fallback from '../../../assets/images/fallback.png'
 
 export function createCard({ title, price, author, tag, image }) {
   const card = document.createElement('div')
@@ -8,7 +9,11 @@ export function createCard({ title, price, author, tag, image }) {
   const capitalizedTag = capitalize(tag)
 
   card.innerHTML = `
-    <img src="${image}" alt="Cover of ${title}">
+    <img
+      class="${cls.image}"
+      src="${image}" onerror="this.onerror=null; this.src='${fallback}';"
+      alt="Cover of ${title}"
+    >
     
     <div class="${cls.content}">
     
