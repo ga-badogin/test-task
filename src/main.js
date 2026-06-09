@@ -1,3 +1,5 @@
-import "./style.scss";
-
-document.querySelector("#app").innerHTML = `Hello`;
+import './styles/index.scss'
+import './blocks/course/list/data.js'
+import './blocks/course/filter/filter.js'
+import './blocks/course/search/search.js'
+import './blocks/course/list/list.js'

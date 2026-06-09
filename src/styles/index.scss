@@ -1,0 +1,89 @@
+@use 'reset';
+@use 'variables';
+
+body {
+  font: var(--font-s);
+
+  overflow: hidden;
+}
+
+#app {
+  width: 100vw;
+  height: 100vh;
+  overflow-y: scroll;
+
+  background-image: url('../assets/images/background.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#container {
+  padding: 40px 20px 80px 20px;
+  max-width: 1270px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#subtitle {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+#title {
+  font: var(--font-h1);
+  margin-bottom: 50px;
+}
+
+#subtitle,
+#title {
+  text-align: center;
+}
+
+#course-controls {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 10px;
+  border-bottom-left-radius: var(--border-radius);
+  border-bottom-right-radius: var(--border-radius);
+  margin-bottom: 50px;
+  position: sticky;
+  top: 0;
+}
+
+#course-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+#load-more {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  color: var(--text-dark-gray-color);
+  font-weight: 700;
+  margin: 50px auto 0 auto;
+
+  & > .load-more-icon {
+    transition: rotate ease 500ms;
+  }
+
+  &:hover > .load-more-icon {
+    rotate: -90deg;
+  }
+}
+
+@media screen and (max-width: 1146px) {
+  #course-controls {
+    justify-content: center;
+  }
+}

@@ -1,0 +1,21 @@
+.container {
+  position: relative;
+  max-width: 390px;
+  width: 100%;
+}
+
+.input {
+  font: var(--font-xs);
+  width: 100%;
+  border: var(--border);
+  border-radius: var(--border-radius);
+  height: var(--height);
+  padding: 0 35px 0 15px;
+}
+
+.icon {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+}

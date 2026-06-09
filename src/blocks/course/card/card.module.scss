@@ -1,0 +1,77 @@
+.card {
+  max-width: 390px;
+  width: 100%;
+  height: 438px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: var(--main-box-shadow);
+  transition: box-shadow 300ms ease;
+
+  &:hover {
+    box-shadow: none;
+  }
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  border: var(--border);
+  border-bottom-left-radius: var(--border-radius);
+  border-bottom-right-radius: var(--border-radius);
+  border-top: none;
+  padding: 25px;
+}
+
+.tag {
+  margin-bottom: 20px;
+  font: var(--font-xs);
+  padding: 2px 8px;
+  border-radius: var(--border-radius);
+  color: white;
+
+  &.marketing {
+    background-color: var(--marketing-color);
+  }
+
+  &.management {
+    background-color: var(--managment-color);
+  }
+
+  &.hr {
+    background-color: var(--hr-color);
+  }
+
+  &.design {
+    background-color: var(--design-color);
+  }
+
+  &.development {
+    background-color: var(--development-color);
+  }
+}
+
+.title {
+  font: var(--font-l);
+  font-weight: 700;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.footer {
+  font: var(--font-m);
+  margin-top: auto;
+}
+
+.price {
+  color: var(--danger-color);
+  font-weight: 700;
+}
+
+.author {
+  color: var(--text-gray-color);
+}

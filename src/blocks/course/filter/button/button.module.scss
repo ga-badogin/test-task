@@ -1,0 +1,19 @@
+.button {
+  font-weight: 700;
+  display: flex;
+  gap: 2px;
+  color: var(--text-light-gray-color);
+  padding: 10px 20px;
+  flex-shrink: 0;
+
+  &.active {
+    color: var(--danger-color);
+    outline: var(--selected-border);
+    border-radius: var(--border-radius);
+  }
+}
+
+.count {
+  font-size: 10px;
+  font-weight: 900;
+}
